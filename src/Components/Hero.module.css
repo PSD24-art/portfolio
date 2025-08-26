@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+.main_hero {
+  @apply h-dvh w-dvw flex text-white;
+  /* grid grid-cols-2 */
+}

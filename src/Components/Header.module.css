@@ -1,0 +1,72 @@
+.blinking_cursor {
+  animation: blink 1s step-start infinite;
+  display: inline-block;
+  -webkit-text-stroke: 1.2px white;
+  font-size: large;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* From Uiverse.io by mrhyddenn */
+.download_CV {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: #0f1923;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.15s ease;
+}
+
+.download_CV_lg {
+  position: relative;
+  display: block;
+  padding-top: 3px;
+  /* padding-left: 5px; */
+  padding-right: 5px;
+  padding-bottom: 3px;
+  color: #fff;
+  /* background-color: #c716b8a5; */
+  overflow: hidden;
+  box-shadow: inset 0px 0px 0px 1px transparent;
+  text-wrap: wrap;
+  border-radius: 5px;
+}
+
+.download_CV_lg:hover {
+  color: whitesmoke;
+}
+
+.download_CV_sl {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: -1px;
+  left: -8px;
+  width: 0;
+  transform: skew(-15deg);
+  transition: all 0.2s ease;
+}
+
+.download_CV_text {
+  display: flex;
+  position: relative;
+}
+
+.download_CV:hover .download_CV_sl {
+  width: calc(100% + 15px);
+}
