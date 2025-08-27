@@ -1,7 +1,7 @@
 .blinking_cursor {
   animation: blink 1s step-start infinite;
   display: inline-block;
-  -webkit-text-stroke: 1.2px white;
+  -webkit-text-stroke: 1.5px white;
   font-size: large;
 }
 
@@ -26,7 +26,6 @@
   background: none;
   color: #0f1923;
   cursor: pointer;
-  text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
   transition: all 0.15s ease;

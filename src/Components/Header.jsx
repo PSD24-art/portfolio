@@ -20,9 +20,7 @@ function Header() {
           {"["}
         </div>
         <span className="font-serif text-fuchsia-400 ">PSD</span>
-        <span
-          className={`font-serif blinking_underscore text-white ${blinking_cursor}`}
-        >
+        <span className={`blinking_underscore text-white ${blinking_cursor}`}>
           _
         </span>
         <div className="text-yellow-300 ml-1.5 flex items-center text-2xl pb-1.5 font-bold transform transition duration-300 group-hover:scale-130">
@@ -34,12 +32,12 @@ function Header() {
       <div className="flex items-center mr-3 ">
         <button className={`${download_CV} group`}>
           <div className={`${download_CV_lg}`}>
-            <span className={`${download_CV_sl} bg-fuchsia-500`}></span>
+            <span className={`${download_CV_sl} bg-fuchsia-400`}></span>
             <span
               className={`${download_CV_text} text-yellow-300 group-hover:text-white`}
             >
               <span>
-                <LiaDownloadSolid class Name="text-2xl" />
+                <LiaDownloadSolid className="text-2xl font-mono text-fuchsia-400 group-hover:text-white" />
               </span>
               Resume
             </span>
