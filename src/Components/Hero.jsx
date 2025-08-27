@@ -8,8 +8,8 @@ function Hero() {
       <div className="flex flex-col justify-end items-start text-3xl m-8 mb-14 pb-15">
         <Shapes></Shapes>
         {/* Text content */}
-        <div>Hi, I’m</div>
-        <div className="mb-2">Prathamesh</div>
+        <div>Full Stack</div>
+        <div className="mb-2">Web Developer</div>
         <div className="text-xl mb-2">
           Building digital products that{" "}
           <span className="text-fuchsia-400">
