@@ -5,7 +5,7 @@ import Shapes from "./Shapes";
 function Hero() {
   return (
     <div className={`${main_hero} relative`}>
-      <div className="flex flex-col justify-end items-start text-3xl m-8 mb-8 pb-15">
+      <div className="flex flex-col justify-end items-start text-3xl m-8 mb-8 pb-10">
         <Shapes></Shapes>
         {/* Text content */}
         <div>Full Stack</div>

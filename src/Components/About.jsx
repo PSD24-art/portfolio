@@ -6,7 +6,7 @@ import SVGS from "./SVGS";
 function About() {
   return (
     <>
-      <div className=" pt-20 overflow-hidden flex flex-col items-center text-white ">
+      <div className=" pt-12 overflow-hidden flex flex-col items-center text-white ">
         <div className="w-48 h-48 rounded-full border-4 border-fuchsia-700 p-2 transition-shadow duration-400 hover:shadow-[0_0_20px_rgba(255,255,255,0.45)] ">
           <img src={profile} alt="profile photo" className="rounded-full" />
         </div>

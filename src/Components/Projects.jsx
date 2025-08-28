@@ -1,5 +1,5 @@
 import ProjectCard from "./ProjectCard";
-import calCivil from "../assets/calCivil.png";
+import { CardsArr } from "../store/CardsArr";
 import { useRef } from "react";
 
 function Projects() {
@@ -15,61 +15,30 @@ function Projects() {
     }
   };
 
-  const cardsArr = [
-    {
-      id: 1,
-      imgUrl: calCivil,
-      projectTitle: "calCivil",
-      projectDescription:
-        "calCivil is a web app that helps civil engineers with essential calculations, built with a clean UI and mobile responsiveness to showcase my CSS skills",
-      pModules: [
-        "Co-ordinate Distance Calculator",
-        "Concrete Volume Calculator",
-        "Unit Convertor",
-        "Brick Quantity Calculator",
-      ],
-      projectLink: "https://calcivil-backend.onrender.com",
-      gitLink: "https://github.com/PSD24-art/calCivil-backend",
-    },
-    {
-      id: 2,
-      imgUrl: calCivil,
-      projectTitle: "calCivil",
-      projectDescription:
-        "calCivil is a web app that helps civil engineers with essential calculations, built with a clean UI and mobile responsiveness to showcase my CSS skills",
-      pModules: [
-        "Co-ordinate Distance Calculator",
-        "Concrete Volume Calculator",
-        "Unit Convertor",
-        "Brick Quantity Calculator",
-      ],
-      projectLink: "https://calcivil-backend.onrender.com",
-      gitLink: "https://github.com/PSD24-art/calCivil-backend",
-    },
-  ];
-
   return (
     <>
-      <div className="text-white m-8 p-3 ps-4 pe-4 h-auto" ref={scroll}>
-        <button
-          onClick={() => scroll("left")}
-          className="absolute left-8 translate-y-100 bg-black text-white p-2 rounded-full scale-150"
-        >
-          {"</"}
-        </button>
+      <div className="text-white m-8 p-3 ps-4 pe-4 h-auto">
         <button
           onClick={() => scroll("right")}
-          className="absolute right-8 translate-y-100 bg-black text-white p-2 rounded-full scale-150"
+          className="absolute translate-x-78 translate-y-96 bg-black opacity-50 hover:opacity-100 text-white p-[1px] rounded-full scale-150 cursor-pointer"
         >
           {"/>"}
         </button>
+        <button
+          onClick={() => scroll("left")}
+          className="absolute left-8 translate-y-96 bg-black opacity-50 p-[1px] hover:opacity-100 cursor-pointer rounded-full scale-150"
+        >
+          {"</"}
+        </button>
 
-        <p>Projects:</p>
+        <p className="text-2xl m-2 p-2 ps-0 ms-0 text-fuchsia-400  e">
+          PROJECTS:
+        </p>
         <div
           ref={scrollRef}
           className="flex items-center flex-shrink-0 overflow-x-auto overflow-y-hidden p-2 border border-amber-50  rounded-2xl"
         >
-          {cardsArr.map((card) => (
+          {CardsArr.map((card) => (
             <ProjectCard
               key={card.id}
               imgUrl={card.imgUrl}

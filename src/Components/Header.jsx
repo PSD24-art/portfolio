@@ -10,7 +10,7 @@ import {
 
 function Header() {
   return (
-    <header className=" z-20 fixed w-dvw h-11 flex items-center justify-between mt-2 ">
+    <header className=" z-20 fixed w-dvw h-11 flex items-center justify-between p-2 bg-[rgb(13,13,13)]">
       {/* Logo Div */}
       <div className="group ps-4 text-xl gap-0  bg-[rgb(13,13,13)] text-white flex items-center hover:cursor-pointer cursor-default ">
         <span className="mr-1 ">

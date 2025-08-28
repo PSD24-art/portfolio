@@ -5,11 +5,11 @@ body {
   overscroll-behavior: none; /* disables bounce/scroll chaining */
 }
 
-.html,
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none; /* Chrome, Edge, Safari */
 }
-/* 
+
 * {
-  border: 1px solid white;
-} */
+  /* border: 1px solid white; */
+  scroll-behavior: smooth;
+}
