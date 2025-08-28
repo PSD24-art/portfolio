@@ -13,7 +13,7 @@ function App() {
       <About></About>
       <Skills></Skills>
       <Projects></Projects>
-      <ContactMe></ContactMe>
+      {/* <ContactMe></ContactMe> */}
     </>
   );
 }
