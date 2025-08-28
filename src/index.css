@@ -4,3 +4,8 @@ html,
 body {
   overscroll-behavior: none; /* disables bounce/scroll chaining */
 }
+
+.html,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
+}

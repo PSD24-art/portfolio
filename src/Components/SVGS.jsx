@@ -1,7 +1,7 @@
 function SVGS() {
   return (
     <div
-      className="relative -z-1 opacity-15 blur-[7px]
+      className="relative -z-1 opacity-22 blur-[7px]
 "
     >
       <div className="absolute -left-70 -top-60 inset-0 w-full h-full">
