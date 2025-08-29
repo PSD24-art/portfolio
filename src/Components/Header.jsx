@@ -1,5 +1,6 @@
 import { GiCurlyWing, GiSpikyWing } from "react-icons/gi";
 import { LiaDownloadSolid } from "react-icons/lia";
+
 import {
   blinking_cursor,
   download_CV,
@@ -10,40 +11,44 @@ import {
 
 function Header() {
   return (
-    <header className=" z-20 fixed w-dvw h-11 flex items-center justify-between p-2 bg-[rgb(13,13,13)]">
+    <header className="z-10 fixed w-dvw h-11 sm:h-15 flex items-center justify-between p-2 bg-black lg:bg-transparent md:bg-transparent">
       {/* Logo Div */}
-      <div className="group ps-4 text-xl gap-0  bg-[rgb(13,13,13)] text-white flex items-center hover:cursor-pointer cursor-default ">
-        <span className="mr-1 ">
-          {/* <GiCurlyWing classNameName="text-fuchsia-400 pb-1.5 text-3xl" /> */}
-        </span>
-        <div className="text-yellow-300 mr-1.5 flex items-center text-2xl pb-1.5 font-bold transform transition duration-300 group-hover:scale-130">
-          {"["}
+      <a href="#home">
+        <div className="group ms-4 text-xl gap-0 lg:bg-transparent bg-black text-white flex items-center hover:cursor-pointer cursor-default ">
+          <span className="mr-1 ">
+            {/* <GiCurlyWing classNameName="text-fuchsia-400 pb-1.5 text-3xl" /> */}
+          </span>
+          <div className="text-yellow-300 mr-1.5 flex items-center text-2xl sm:text-3xl pb-1.5 font-bold transform transition duration-300 group-hover:scale-130">
+            {"["}
+          </div>
+          <span className="font-serif text-fuchsia-400 sm:text-3xl ">PSD</span>
+          <span className={`blinking_underscore text-white ${blinking_cursor}`}>
+            _
+          </span>
+          <div className="text-yellow-300 ml-1.5 flex items-center text-2xl pb-1.5 font-bold transform transition duration-300 group-hover:scale-130 sm:text-3xl">
+            {"]"}
+          </div>
         </div>
-        <span className="font-serif text-fuchsia-400 ">PSD</span>
-        <span className={`blinking_underscore text-white ${blinking_cursor}`}>
-          _
-        </span>
-        <div className="text-yellow-300 ml-1.5 flex items-center text-2xl pb-1.5 font-bold transform transition duration-300 group-hover:scale-130">
-          {"]"}
-        </div>
-      </div>
+      </a>
 
       {/* button Div */}
-      <div className="flex items-center pe-5 bg-[rgb(13,13,13)]">
-        <button className={`${download_CV} group`}>
-          <div className={`${download_CV_lg}`}>
-            <span className={`${download_CV_sl} bg-fuchsia-400`}></span>
-            <span
-              className={`${download_CV_text} text-yellow-300   group-hover:text-white`}
-            >
-              <span>
-                <LiaDownloadSolid className="text-2xl font-mono text-fuchsia-400 group-hover:text-white" />
+      <a href="/Resume_Prathamesh.pdf" download="Prathamesh_resume.pdf">
+        <div className="flex items-center me-5 bg-transperant">
+          <button className={`${download_CV} group`}>
+            <div className={`${download_CV_lg}`}>
+              <span className={`${download_CV_sl} bg-fuchsia-400`}></span>
+              <span
+                className={`${download_CV_text} text-yellow-300 group-hover:text-white`}
+              >
+                <span>
+                  <LiaDownloadSolid className="text-2xl sm:text-3xl font-mono text-fuchsia-400 group-hover:text-white" />
+                </span>
+                Resume
               </span>
-              Resume
-            </span>
-          </div>
-        </button>
-      </div>
+            </div>
+          </button>
+        </div>
+      </a>
     </header>
   );
 }

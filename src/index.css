@@ -13,3 +13,8 @@ body {
   /* border: 1px solid white; */
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: black;
+  /* background-color: rgb(106, 98, 98); */
+}

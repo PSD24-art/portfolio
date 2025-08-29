@@ -1,10 +1,7 @@
 function SVGS() {
   return (
-    <div
-      className="relative -z-1 opacity-22 blur-[7px]
-"
-    >
-      <div className="absolute -left-70 -top-60 inset-0 w-full h-full">
+    <div className="absolute opacity-22 blur-[7px] z-4">
+      <div className="absolute -left-25 sm:-left-0 md:left-10 lg:left-0 lg:-top-60 -top-80 inset-0 w-full h-full">
         <svg className="w-80 h-10  " xmlns="http://www.w3.org/2000/svg">
           <rect
             x="10"
@@ -66,8 +63,8 @@ function SVGS() {
           />
         </svg>
       </div>
-      <div className="absolute inset-0 w-full h-full -z-1">
-        <svg className="w-80 h-10  " xmlns="http://www.w3.org/2000/svg">
+      <div className=" absolute left-35 sm:left-96 md:translate-x-60 lg:translate-x-10 inset-0 w-full h-full -z-1">
+        <svg className="w-80 h-10" xmlns="http://www.w3.org/2000/svg">
           <rect
             x="10"
             y="10"
@@ -129,7 +126,7 @@ function SVGS() {
         </svg>
       </div>
       {/* next pair */}
-      <div className="absolute -left-70 top-60 inset-0 w-full h-full">
+      <div className="absolute -left-25 sm:-left-0 top-80 lg:-translate-y-20 inset-0 w-full h-full">
         <svg className="w-80 h-10  " xmlns="http://www.w3.org/2000/svg">
           <rect
             x="10"
@@ -191,7 +188,7 @@ function SVGS() {
           />
         </svg>
       </div>
-      <div className="absolute top-125 inset-0 w-full h-full -z-1">
+      <div className="absolute left-35 top-160 sm:left-96 md:translate-x-60 lg:translate-x-146 lg:-translate-y-30 inset-0 w-full h-full -z-1">
         <svg className="w-80 h-10  " xmlns="http://www.w3.org/2000/svg">
           <rect
             x="10"

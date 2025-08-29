@@ -1,13 +1,14 @@
 import ProjectCard from "./ProjectCard";
 import { CardsArr } from "../store/CardsArr";
 import { useRef } from "react";
+import SVGS from "./SVGS";
 
 function Projects() {
   const scrollRef = useRef(null);
 
   const scroll = (direction) => {
     if (!scrollRef.current) return;
-    const cardWidth = scrollRef.current.firstChild.offsetWidth + 30;
+    const cardWidth = scrollRef.current.firstChild.offsetWidth + 320;
     if (direction === "left") {
       scrollRef.current.scrollBy({ left: -cardWidth, behavior: "smooth" });
     } else {
@@ -17,38 +18,30 @@ function Projects() {
 
   return (
     <>
-      <div className="text-white m-8 p-3 ps-4 pe-4 h-auto">
-        <button
-          onClick={() => scroll("right")}
-          className="absolute translate-x-78 translate-y-96 bg-black opacity-50 hover:opacity-100 text-white p-[1px] rounded-full scale-150 cursor-pointer"
-        >
-          {"/>"}
-        </button>
-        <button
-          onClick={() => scroll("left")}
-          className="absolute left-8 translate-y-96 bg-black opacity-50 p-[1px] hover:opacity-100 cursor-pointer rounded-full scale-150"
-        >
-          {"</"}
-        </button>
-
-        <p className="text-2xl m-2 p-2 ps-0 ms-0 text-fuchsia-400  e">
-          PROJECTS:
-        </p>
-        <div
-          ref={scrollRef}
-          className="flex items-center flex-shrink-0 overflow-x-auto overflow-y-hidden p-2 border border-amber-50  rounded-2xl"
-        >
-          {CardsArr.map((card) => (
-            <ProjectCard
-              key={card.id}
-              imgUrl={card.imgUrl}
-              projectTitle={card.projectTitle}
-              projectDescription={card.projectDescription}
-              pModules={card.pModules}
-              projectLink={card.projectLink}
-              gitLink={card.gitLink}
-            />
-          ))}
+      <div
+        id="projects"
+        className="text-white rounded-4xl border-t-3 border-b-3 h-[calc(100vh-66px)] overflow-auto ms-5 me-5 md:ms-34 md:me-34 flex p-4 lg:border-r-4 lg:border-l-4 lg:border-0 lg:mb-10 lg:overflow-y-hidden lg:overflow-x-auto lg:items-center"
+      >
+        <div>
+          <h3 className="text-left ps-4 text-2xl underline underline-offset-4 text-fuchsia-400">
+            Projects
+          </h3>
+          <div
+            ref={scrollRef}
+            className="flex flex-col lg:flex-row lg:mb-10 lg:items-start lg:gap-6 items-center flex-shrink-0 p-8 pt-2 pb-2 rounded-2xl m-2 mt-0 "
+          >
+            {CardsArr.map((card) => (
+              <ProjectCard
+                key={card.id}
+                imgUrl={card.imgUrl}
+                projectTitle={card.projectTitle}
+                projectDescription={card.projectDescription}
+                pModules={card.pModules}
+                projectLink={card.projectLink}
+                gitLink={card.gitLink}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </>

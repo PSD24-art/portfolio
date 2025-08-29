@@ -1,10 +1,5 @@
 @import "tailwindcss";
 
-.main_hero {
-  @apply h-dvh w-full flex text-white;
-  /* grid grid-cols-2 */
-}
-
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
