@@ -8,9 +8,9 @@ function About() {
     <>
       <div
         id="about"
-        className="pt-12 overflow-hidden flex flex-col items-center justify-evenly text-white lg:h-dvh lg:grid lg:grid-cols-2 lg:place-items-center  h-dvh bg-black/40"
+        className="pt-12 flex flex-col items-center justify-evenly text-white lg:h-dvh lg:grid lg:grid-cols-2 lg:place-items-center  h-dvh bg-black/40"
       >
-        <div className="flex flex-col items-center overflow-hidden">
+        <div className="flex flex-col items-center p-4">
           <div
             className="w-48 h-48 rounded-full border-4 border-fuchsia-700 p-2 transition-shadow duration-400 hover:shadow-[0_0_20px_rgba(255,255,255,0.45)] lg:w-58 lg:h-58
           "
