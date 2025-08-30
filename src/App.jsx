@@ -7,6 +7,7 @@ import ContactMe from "./Components/Contact";
 import SVGS from "./Components/SVGS";
 import Footer from "./Components/Footer";
 import Shapes from "./Components/Shapes";
+import SocialTags from "./Components/SocailTags";
 
 function App() {
   return (
