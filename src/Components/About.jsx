@@ -8,7 +8,7 @@ function About() {
     <>
       <div
         id="about"
-        className="pt-12 flex flex-col items-center justify-evenly text-white lg:h-dvh lg:grid lg:grid-cols-2 lg:place-items-center  h-dvh bg-black/40"
+        className="pt-12 flex flex-col items-center justify-evenly min-h-dvh text-white lg:h-dvh lg:grid lg:grid-cols-2 lg:place-items-center  h bg-black/40"
       >
         <div className="flex flex-col items-center p-4">
           <div
