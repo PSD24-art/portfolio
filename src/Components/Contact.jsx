@@ -6,6 +6,8 @@ import SocialTags from "./SocailTags";
 
 export default function ContactMe() {
   const [loader, setLoader] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -22,9 +24,9 @@ export default function ContactMe() {
       .then(
         (result) => {
           console.log("Message sent:", result.text);
-          <Alert />;
           form.current.reset();
           setLoader(false);
+          setShowAlert(true);
         },
         (error) => {
           console.log("Error:", error.text);
@@ -34,9 +36,8 @@ export default function ContactMe() {
         }
       );
   };
-  const [showAlert, setShowAlert] = useState(false);
   const handleAlertButton = () => {
-    setDisplay(true);
+    setShowAlert(false);
   };
   return (
     <section
@@ -64,6 +65,7 @@ export default function ContactMe() {
             />
             <input
               type="email"
+              name="email"
               placeholder="Your Email"
               className="w-full px-4 py-3 rounded-xl bg-[#1a1a1a] text-white focus:outline-none focus:ring-2 focus:ring-fuchsia-500"
             />
@@ -107,6 +109,7 @@ export default function ContactMe() {
         <SocialTags></SocialTags>
       </div>
       {loader && <Loader></Loader>}
+      {showAlert && <Alert handleAlertButton={handleAlertButton}></Alert>}
     </section>
   );
 }
