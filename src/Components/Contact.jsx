@@ -66,6 +66,7 @@ export default function ContactMe() {
             <input
               type="email"
               name="email"
+              required
               placeholder="Your Email"
               className="w-full px-4 py-3 rounded-xl bg-[#1a1a1a] text-white focus:outline-none focus:ring-2 focus:ring-fuchsia-500"
             />
@@ -75,6 +76,7 @@ export default function ContactMe() {
             name="message"
             rows="5"
             placeholder="Your Message"
+            required
             className="w-full px-4 py-3 rounded-xl bg-[#1a1a1a] text-white focus:outline-none focus:ring-2 focus:ring-fuchsia-500"
           ></textarea>
 
