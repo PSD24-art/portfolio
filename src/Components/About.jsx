@@ -45,7 +45,7 @@ function About() {
             </div>
           </div>
         </div>
-        {/* <SVGS></SVGS> */}
+
         <div>
           <div className="mt-2 text-xl lg:text-3xl font-extralight ms-10 me-10 mb-10 ">
             <p className="mt-4">

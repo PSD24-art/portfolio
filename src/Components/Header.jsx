@@ -11,7 +11,7 @@ import {
 
 function Header() {
   return (
-    <header className="z-10 fixed w-dvw h-11 sm:h-15 flex items-center justify-between p-2 bg-black lg:bg-transparent md:bg-transparent">
+    <header className="z-10 fixed w-dvw h-11 sm:h-15 flex items-center justify-between p-3 pt-5 bg-black lg:bg-transparent md:bg-transparent">
       {/* Logo Div */}
       <a href="#home">
         <div className="group ms-4 text-xl gap-0 lg:bg-transparent bg-black text-white flex items-center hover:cursor-pointer cursor-default ">

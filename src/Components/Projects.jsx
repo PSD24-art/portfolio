@@ -20,7 +20,7 @@ function Projects() {
     <>
       <div
         id="projects"
-        className="text-white rounded-4xl border-t-3 border-b-3 h-[calc(100vh-80px)] overflow-auto ms-5 me-5 md:ms-34 md:me-34 flex p-4 lg:border-r-4 lg:border-l-4 lg:border-0 lg:mb-10 lg:overflow-y-hidden lg:overflow-x-auto lg:items-center bg-black/40"
+        className="text-white rounded-4xl border-t-3 border-b-3 h-[calc(100vh-100px)] overflow-auto ms-5 me-5 md:ms-34 md:me-34 flex p-4 lg:border-r-4 lg:border-l-4 lg:border-0 lg:mb-10 lg:overflow-y-hidden lg:overflow-x-auto lg:items-center bg-black/40"
       >
         <div>
           <h3 className="text-left ps-4 text-2xl underline underline-offset-4 text-fuchsia-400">

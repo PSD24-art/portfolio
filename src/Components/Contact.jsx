@@ -34,6 +34,10 @@ export default function ContactMe() {
         }
       );
   };
+  const [showAlert, setShowAlert] = useState(false);
+  const handleAlertButton = () => {
+    setDisplay(true);
+  };
   return (
     <section
       id="contactMe"

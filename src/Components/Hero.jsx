@@ -1,24 +1,22 @@
 import { Typewriter } from "react-simple-typewriter";
-import Shapes from "./Shapes";
-import pp from "../assets/pp.svg";
-import SVGS from "./SVGS";
-import { Link } from "react-scroll";
+
 function Hero() {
   return (
     <div
       className={`h-dvh w-dvw  flex text-white relative overflow-hidden bg-black/40`}
       id="home"
     >
-      <div className="-z-30 opacity-50 blur-sm fixed inset-0 bg-[url('/bgblack.jpg')] bg-cover bg-center "></div>
+      <div className="-z-30 opacity-60 blur-[6px] fixed inset-0 bg-[url('/bgblack.jpg')] bg-cover bg-center "></div>
 
       <div className="flex flex-col justify-evenly items-start text-3xl m-8 mb-8 pb-10 w-full lg:grid lg:grid-cols-2 lg:place-items-center overflow-hidden ">
-        <div className="flex items-center justify-center p-5 w-full overflow-hidden invisible lg:visible">
+        <div className="flex items-center justify-center p-10 pb-0 w-full  lg:visible">
           {" "}
-          <img
+          {/* <img
             src={pp}
             alt="profile"
             className="w-80 h-60 md:w-160 md:h-120 opacity-60 scale-150 "
-          />
+          /> */}
+          <img className=" object-contain opacity-75" src="Firmware.gif"></img>
         </div>
 
         {/* Text content */}

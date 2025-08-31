@@ -9,15 +9,15 @@ import SVGS from "./SVGS";
 
 function Skills() {
   return (
-    <div className=" text-white min-h-dvh m-8 mt-0 p-12 flex flex-col sm:h-dvh md:h-dvh lg:h-dvh items-center justify-evenly lg:grid lg:grid-cols-2 lg:gap-x-14 lg:place-items-center overflow-hidden bg-black/40 ">
+    <div className=" text-white min-h-dvh m-3 mt-0 p-6  flex flex-col sm:h-dvh md:h-dvh lg:h-dvh items-center justify-center lg:grid lg:grid-cols-2 lg:gap-x-14 lg:place-items-center overflow-hidden bg-black/40 ">
       <div>
-        <div className="flex items-center justify-center text-md md:text-xl lg:text-2xl">
+        <div className="flex items-center justify-center text-md md:text-xl lg:text-2xl ">
           {" "}
           <p className="opacity-45 text-center">
             &#123; Building small steps toward big solutions &#125;
           </p>
         </div>
-        <div className="lg:text-xl md:text-2xl">
+        <div className="lg:text-xl md:text-2xl pb-6 font-serif">
           <p className="mt-4 text-center">
             A self-driven developer exploring frontend and full-stack
             development. I have experience in building small to medium web
