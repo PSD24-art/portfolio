@@ -20,7 +20,7 @@ export default function Footer() {
             About
           </a>
           <a
-            href="#contact"
+            href="#contactMe"
             className="hover:text-fuchsia-500 transition-colors"
           >
             Contact
