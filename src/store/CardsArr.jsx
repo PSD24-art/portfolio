@@ -1,8 +1,18 @@
 import calCivil from "../assets/calCivil.png";
 import SocialMedia from "../assets/Social_media.png";
 import Simon from "../assets/Simon.png";
-
+import funmovie from "../assets/funmovie.png";
 export const CardsArr = [
+  {
+    id: 4,
+    imgUrl: funmovie,
+    projectTitle: "FUNMOVIE",
+    projectDescription:
+      "FUNMOVIE a full stack web application where you can register yourself, login and logout functionality, and you can add ratings to a particular movie",
+    pModules: ["Home Page", "Movie details", "Reviews"],
+    projectLink: "https://funmovies-fe.onrender.com/",
+    gitLink: "https://github.com/PSD24-art/Funmovies-F",
+  },
   {
     id: 1,
     imgUrl: calCivil,
