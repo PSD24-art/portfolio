@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div
       className={`h-dvh w-dvw  flex text-white relative overflow-hidden bg-black/40`}
-      id="home"
+      id="hero"
     >
       <div className="-z-30 opacity-60 blur-[6px] fixed inset-0 bg-[url('/bgblack.jpg')] bg-cover bg-center "></div>
 

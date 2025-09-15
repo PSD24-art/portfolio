@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+.btnAnimation {
+  animation: downA 0.5s ease-in 0s infinite alternate;
+  transition: all;
+}
+
+@keyframes downA {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(15px);
+  }
+}
