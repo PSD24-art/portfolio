@@ -2,7 +2,19 @@ import calCivil from "../assets/calCivil.png";
 import SocialMedia from "../assets/Social_media.png";
 import Simon from "../assets/Simon.png";
 import funmovie from "../assets/funmovie.png";
+import feedback from "../assets/Feedback.png";
+
 export const CardsArr = [
+  {
+    id: 5,
+    imgUrl: feedback,
+    projectTitle: "Feedback_Guru",
+    projectDescription:
+      "Designed & developed a full-stack role-based feedback platform (faculty, admins), Integrated secure login system with JWT & Passport.js",
+    pModules: ["Login", "Faculty & Admin Dashboard", "Feedback Form"],
+    projectLink: "https://feedback-guru-f.onrender.com",
+    gitLink: "https://github.com/PSD24-art/Feedback-Guru-F",
+  },
   {
     id: 4,
     imgUrl: funmovie,
