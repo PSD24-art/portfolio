@@ -8,12 +8,12 @@ import ContactMe from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Shapes from "./Components/Shapes";
 import DownArrow from "./Components/DownArrow";
-
+import Slider from "./Components/slider";
+import "./App.css";
 function App() {
   const idArr = ["hero", "about", "skills", "projects", "contactMe"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // ✅ Track which section is visible using IntersectionObserver
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -41,7 +41,6 @@ function App() {
     return () => observer.disconnect();
   }, [idArr]);
 
-  // ✅ OnClick handler → move to next section
   function handleOnClick() {
     if (currentIndex < idArr.length - 1) {
       let nextId = idArr[currentIndex + 1];
@@ -61,7 +60,11 @@ function App() {
       <Hero />
       <About />
       <Skills />
-      <Projects />
+      <div className="z-100 p-3 w-full flex justify-center flex-col items-center min-h-dvh ">
+        {/* <div className="text-fuchsia-500 font-bold text-2xl mb-3">Projects</div> */}
+        <Slider />
+      </div>
+
       <ContactMe />
       <Footer />
     </>

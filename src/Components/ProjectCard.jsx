@@ -1,6 +1,7 @@
 import { BiRightArrow, BiLink } from "react-icons/bi";
 
 function ProjectCard({
+  econtent,
   imgUrl,
   projectTitle,
   projectDescription,
@@ -9,35 +10,60 @@ function ProjectCard({
   gitLink,
 }) {
   return (
-    <div className="flex flex-col lg:flex-row lg:w-lg lg:h-96 border-2 p-3 mt-3 rounded-2xl">
-      <div className="p-2 mt-2 shadow-[0_0_5px_rgb(255,255,255)] rounded-xl lg:mr-5 h-fit w0fit">
-        <img src={imgUrl} className="rounded-xl"></img>
-        <p className="m-2 mt-2 text-2xl text-orange-400"> {projectTitle} </p>
+    <div
+      className={`${econtent} 
+        w-[80dvw] sm:w-[70%] md:w-[55%] lg:w-[40%] 
+        mx-auto 
+        border border-gray-700 p-5 rounded-2xl 
+        shadow-[0_0_15px_rgba(0,0,0,0.6)] 
+        bg-[#0a0a0a]/60 
+        transition-transform duration-300 
+        hover:scale-[1.02] hover:shadow-[0_0_20px_rgba(56,189,248,0.3)]`}
+    >
+      {/* Image Container */}
+      <div className="flex justify-center items-center w-full overflow-hidden rounded-xl border border-gray-700 bg-black/40">
+        <img
+          src={imgUrl}
+          alt={projectTitle}
+          className="w-full h-auto max-h-[55dvh] object-contain transition-transform duration-500 hover:scale-105"
+        />
       </div>
-      <div>
-        <p className="m-2 mt-2">{projectDescription}</p>
-        <p className="m-2">Project has following modules</p>
-        <ul className="m-2">
-          {pModules.map((module) => (
-            <li key={module} className="flex">
-              <div>
-                {" "}
-                <BiRightArrow className="mt-1 text-sky-400 me-1" />
-              </div>
-              <div>{module}</div>
+
+      {/* Text content */}
+      <div className="mt-4">
+        <p className="text-2xl text-orange-400 font-semibold">{projectTitle}</p>
+        <p className="mt-2 text-gray-300 text-sm leading-relaxed">
+          {projectDescription}
+        </p>
+
+        <p className="mt-3 text-sky-300 font-medium text-start">
+          Project has following modules:
+        </p>
+        <ul className="mt-1 space-y-1 text-sm">
+          {pModules.map((m) => (
+            <li key={m} className="flex items-center text-gray-200">
+              <BiRightArrow className="text-sky-400 mr-1" />
+              {m}
             </li>
           ))}
         </ul>
-        <div className="flex flex-col m-2">
-          {" "}
-          <div className="flex items-center hover:text-sky-300 hover:underline hover:underline-offset-3">
-            <BiLink className="text-sky-400 me-1" />
-            <a href={projectLink}>Go to Project</a>
-          </div>
-          <div className="flex items-center hover:text-sky-300 hover:underline hover:underline-offset-3">
-            <BiLink className="text-sky-400 me-1" />
-            <a href={gitLink}>GitHub</a>
-          </div>
+
+        {/* Links */}
+        <div className="flex flex-col mt-4 space-y-2 text-sm">
+          <a
+            href={projectLink}
+            target="_blank"
+            className="flex items-center text-sky-400 hover:text-sky-300 hover:underline"
+          >
+            <BiLink className="mr-1" /> View Project
+          </a>
+          <a
+            href={gitLink}
+            target="_blank"
+            className="flex items-center text-sky-400 hover:text-sky-300 hover:underline"
+          >
+            <BiLink className="mr-1" /> GitHub
+          </a>
         </div>
       </div>
     </div>

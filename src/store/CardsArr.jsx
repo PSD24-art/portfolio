@@ -12,8 +12,8 @@ export const CardsArr = [
     projectDescription:
       "Designed & developed a full-stack role-based feedback platform (faculty, admins), Integrated secure login system with JWT & Passport.js",
     pModules: ["Login", "Faculty & Admin Dashboard", "Feedback Form"],
-    projectLink: "https://feedback-guru-f.onrender.com",
-    gitLink: "https://github.com/PSD24-art/Feedback-Guru-F",
+    projectLink: "https://feedback-f.onrender.com",
+    gitLink: "https://github.com/PSD24-art/Feedback-F",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const CardsArr = [
     imgUrl: SocialMedia,
     projectTitle: "Social Media",
     projectDescription:
-      "This app is created to learn, and demonstrate the learnings about React. Built with Bootstrap and used React core concepts such as props, hooks (useState, useReducer, useRef), ContextAPI, conditional redering, etc. Best Viewd on Landscape screens",
+      "This app is created to learn and demonstrate the learnings about React. Built with Bootstrap and used React core concepts such as props, hooks (useState, useReducer, useRef), ContextAPI, conditional redering, etc.",
     pModules: ["Home Page", "Create Post"],
     projectLink: "https://socialmedia-3nvq.onrender.com/",
     gitLink: "https://github.com/PSD24-art/SocialMedia",
